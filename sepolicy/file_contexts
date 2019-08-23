@@ -4,7 +4,7 @@
 /dev/ttyGS1                              u:object_r:radio_device:s0
 
 #sensor
-/data/smc(/.*)?                          u:object_r:tee_data_file:s0
+#/data/smc(/.*)?                          u:object_r:tee_data_file:s0
 /dev/akm8975_aot                         u:object_r:sensors_device:s0
 /dev/akm8975_dev                         u:object_r:sensors_device:s0
 /dev/ct405                               u:object_r:sensors_device:s0
@@ -50,7 +50,7 @@
 # System binaries
 /system/bin/clear_bootcnt.sh             u:object_r:bootcnt_exec:s0
 /vensys/bin/init.pre-rb.sh               u:object_r:bootcnt_exec:s0
-/system/bin/fix-mac.sh                   u:object_r:fixmac_exec:s0
+#/system/bin/fix-mac.sh                   u:object_r:fixmac_exec:s0
 /system/bin/smc_pa_ctrl                  u:object_r:smc_pa_exec:s0
 /system/bin/tf_daemon                    u:object_r:tee_exec:s0
 /system/bin/setup_fs                     u:object_r:setup_fs_exec:s0
